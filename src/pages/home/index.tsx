@@ -4,6 +4,8 @@ import React from 'react';
 import { Container } from './styles';
 
 import techBgImg from '../../assets/tech-bg.png';
+import outlookLogo from '../../assets/outlook.png';
+import whatsappLogo from '../../assets/whatsapp.png';
 
 const HomePage: React.FC = () => {
     return(
@@ -21,7 +23,41 @@ const HomePage: React.FC = () => {
                     Id rhoncus, senectus aliquet pellentesque elementum.
                 </p>
 
-                <a href="/">{`<Talk to me />`}</a>
+                <h2 style={{color: '#15b325'}}>{`<Talk to me />`}</h2>
+
+                <div className="contact" >
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rony-p-11a738117/" target="blank">
+                                <i className="devicon-linkedin-plain colored"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/rony646" target="blank">
+                                <i className="devicon-github-original" ></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:ronypeterson646@outlook.com" target="blank">
+                                <span>
+                                    <img src={outlookLogo} alt="outlook logo"></img>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://wa.me/5531994529271?&text=Olá,%20Rony!%20Vi%20seu%20contato%20pelo%20seu%20site,%20está%20disponível%20agora?" target="blank">
+                                <span>
+                                    <img src={whatsappLogo} alt="whatsapp logo"></img>
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+                </div>
 
             </div>
 

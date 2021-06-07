@@ -37,20 +37,49 @@ export const Container = stlyed.div`
         @media(max-width: 1024px) {
            width: 100%;
         }
+
+        ul {
+            list-style: none;
+            // background: gray;
+            padding: 0;
+        
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+
+                    i {
+                        font-size: 1.5em
+                    }
+
+                    span {
+                        img {
+                            height: 1.5em
+                        }
+                    }
+                }
+            }
+        }
+
+        
        
         
         h1 {
             color: #15b325;
+            font-weight: bold;
+            transition: color 0.3s;
+            color: #15b325;
             font-size: 2.5em;
-    
+            
+            &:hover {
+                color: #05811096;
+            }
              
             @media(max-width: 768px) {
                font-size: 2.3em;
             }
-        }
-    
-        h1, a {
-            transition: color 0.3s;
         }
     
         h2, p {
@@ -64,23 +93,10 @@ export const Container = stlyed.div`
         
         h2 {
             margin: 0;
-            margin-top: 20px;
+            margin-top: 0px;
         }
     
-        a, h1 {
-            color: #15b325;
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-           
-            &:hover {
-                color: #05811096;
-            }
-        }
-    
-    
-      
-    
+
         p {
             width: 60%;
             text-align: left;
