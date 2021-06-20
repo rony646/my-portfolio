@@ -2,6 +2,7 @@ import Particles from 'react-particles-js';
 import { GlobalStyle } from './global/globalStyle';
 
 import HomePage from './pages/home';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
         />
         <GlobalStyle />
         <HomePage />
+        <Projects />
     </>
   );
 }

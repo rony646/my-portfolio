@@ -1,8 +1,11 @@
-import stlyed from 'styled-components';
+import styled from 'styled-components';
 
-export const Container = stlyed.div`
+export const Container = styled.div`
     display: flex;
+    position: relative;
+    // background: red;
     
+
     .img-container {
         display: flex;
         justify-content: center;
@@ -23,7 +26,7 @@ export const Container = stlyed.div`
         flex-direction: column;
         // background: #8080804c;
         justify-content: center;
-        aling-items: center;
+
         width: 50%;
         height: 100vh;
         box-sizing: border-box;
@@ -113,4 +116,34 @@ export const Container = stlyed.div`
 
     }
    
+`
+
+export const ArrowContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 78vh !important;
+    width: 100%;
+    height: 230px;
+    top: 0px;
+
+    @media(max-width: 768px) {
+        margin-top: 30px;
+        bottom: 0vh !important;
+    }
+
+    img {
+        width: 250px;
+    }
+    span {
+        position: relative;
+        bottom: 60px;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.3em;
+        @media(max-width: 768px) {
+           display: none;
+        }
+    }
 `
