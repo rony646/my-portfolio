@@ -102,10 +102,15 @@ export const Container = styled.div`
 
         p {
             width: 60%;
+            
             text-align: left;
     
             @media(max-width: 768px) {
                 width: 70%;
+            }
+
+            @media(min-width: 930px) and (max-width: 1240px){
+                width: 300px;
             }
         }
     
