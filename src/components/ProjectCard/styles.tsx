@@ -31,6 +31,11 @@ export const Container = styled.div`
         width: 70%;
     }
 
+    h1 {
+        font-size: 1.6em !important;
+        white-space: normal !important;
+    }
+
     .links-container {
         display: flex;
         justify-content: space-evenly;

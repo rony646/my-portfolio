@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-import { Slide } from 'react-awesome-reveal';
 import { Container, ArrowContainer } from './styles';
 
 import techBgImg from '../../assets/tech-bg.png';
@@ -14,7 +13,7 @@ const HomePage: React.FC = () => {
         <>
             
             <Container>
-                <Slide>
+                {/* <Slide> */}
                     <div className="content-container">
                         <h1>
                             HI, I’M RONY A <br/>FRONTEND DEVELOPER <br/>FROM BRAZIL!
@@ -22,10 +21,9 @@ const HomePage: React.FC = () => {
 
                         <h2>{`<About me />`}</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Aliquam turpis in egestas consequat molestie. Integer molestie pellentesque 
-                            consequat vitae pulvinar orci sit. Placerat donec pulvinar id vitae. 
-                            Id rhoncus, senectus aliquet pellentesque elementum.
+                            Welcome to my website, my name is Rony and I'm a Frotend Developer from Brazil that loves
+                            technology and coding. Actually I'm working as Software Developer Intern using React.js, Typescript, material-ui,
+                            styled components and also using Figma for prototyping.
                         </p>
 
                         <h2 style={{color: '#15b325'}}>{`<Talk to me />`}</h2>
@@ -65,11 +63,13 @@ const HomePage: React.FC = () => {
                         </div>
 
                     </div>
-                </Slide>
+                {/* </Slide> */}
 
-                <div className="img-container">
-                    <img src={techBgImg} alt="tech logos" />
-                </div>
+                    <div className="img-container">
+                        <img src={techBgImg} alt="tech logos" />
+                    </div>
+                
+               
 
                 <ArrowContainer>
                     <img src={arrowDown} alt="scroll down indicator" height="100%" />
